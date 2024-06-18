@@ -35,13 +35,6 @@ Finally, type `echo alias "sudo"="sudo -S"`.
 
 -Enjoy!
 
-Open an issue in the [Issue Tracker](https://github.com/KatHamer/DebianKindle/issues) if you encounter any issues, or
-PM me on Reddit (u/dylanhamer13) if you need help with any of the instructions.
-
-Thanks for the support, 
-
-Kat
-or send me a friend request on discord if you run into an issue somewhere
+Open an issue in the [Issue Tracker]
+or send me a friend request on discord if you run into an issue somewhere and you want faster attention on the issue. 
 averageemogirl
-
-juliet (new maintainer) 
