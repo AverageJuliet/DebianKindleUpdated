@@ -15,8 +15,8 @@ echo "[*] Mounting Filesystem..."
 mkdir /mnt/debian
 sudo mount -o loop -t ext3 debian.ext3 /mnt/debian
 echo "[*] Installing Debian using debootstrap (THIS WILL TAKE A WHILE)..."
-sudo debootstrap --arch=armel --foreign testing /mnt/debian http://ftp.us.debian.org/
+sudo debootstrap --arch=armel --foreign testing /mnt/debian http://ftp.us.debian.org/debian/
 echo "[*] Unmounting image and removing mountpoint..."
-sudo unmount /mnt/debian
+sudo umount /mnt/debian
 rmdir /mnt/debian
 echo "[*] Image generation complete, you can now copy debian.ext3 to the Kindle..."
