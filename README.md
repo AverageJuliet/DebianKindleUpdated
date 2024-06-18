@@ -1,26 +1,21 @@
 # Installing Debian on your Kindle
 
-# Update (2020): This project is deprecated. I have no idea if any of the following instructions are still accurate, or if any of the links are still working. I have now moved over to [Gitlab](https://gitlab.com/kathamer).
+# Update (2024): This project is no longer deprecated. I have no idea who the hell is gonna use this but its fixed!
 
-
-## Installing Debian on your Kindle
-
-The first thing you need to do is jailbreak your Kindle. The jailbreaking process involves allowing the
-installation of unsigned applications to your Kindle. I used [this guide from LifeHacker.com](https://www.lifehacker.com.au/2016/07/how-to-jailbreak-your-kindle/)
-
-
-Once you have jailbroken, you will be able to install a terminal.
-Installing a terminal allows you to access the underlying Linux system on your Kindle. For this hack, I used KTerm. You can get KTerm from [here.](https://github.com/bfabiszewski/kterm/releases/download/v2.3/kterm-kindle-2.3.zip) To install it, you have to unzip the ZIP file you downloaded into the `extensions` folder on your Kindle's root directory from a computer.
+# things you need installed beforehand 
+1. a JB on your kindle
+2. kterm
+3. mental insanity ngl
 
 Now that you have a terminal, you will be able to install the Debian chroot. 
 Here's where it gets complicated. First, you need to generate a Debian image appropriate for your device. 
-Use `MakeImage.sh` to do this. Run the script on a Linux system to generate the image. If you do not have access to a Linux system, message me and I can provide a pre-generated one.
+Use `MakeImage.sh` to do this. Run the script on a Linux system to generate the image. If you do not have access to a Linux system, then skill issue.
 
 Now, move the `debian.ext3` file on to your Kindle's root directory. You're almost there.
 Once you have moved `debian.ext3`, you need to move the `RunDebian.sh` script and the `UpdateInitScript.sh` script as well as `RunBeforeDebian.sh`
 
 on to your Kindle. Now you can run them. Do this by typing 
-`cd ../..` and then `./RunDebian.sh --root` on your Kindle. You are now root on your Kindle!
+`cd /mnt/us` and then `./RunDebian.sh --root` on your Kindle. You are now root on your Kindle!
 
 Then, hit `CTRL-D` on your Kindle until you see `[US]$` or `[US]#` 
 you are now back in your Kindle's terminal. Type `./RunBeforeDebian.sh` on your Kindle to setup mountpoints and install the `debian command/. 
@@ -31,11 +26,7 @@ You should now have a working Debian install.
 
 Finally, you need to setup Debian (IF YOU HAVE A PREGENERATED IMAGE YOU CAN SKIP THIS STEP)
 First, type `debian --root` to enter Debian as root.
-Then, type `cd /deboostrap`.
-Next, type `./deboostrap --second-stage` and let that do it's thing.
-If it fails, hit `CTRL-D` until you see `[US]$` then type `debian  --root` again.
-Once that completes, type `dpkg --configure -a`.
-Now type `adduser <USERNAME>` replacing `<USERNAME>` with your name.
+then type `adduser <USERNAME>` replacing `<USERNAME>` with your name.
 Next, type `apt-get install sudo`.
 Then, type `adduser <USERNAME> sudo` replacing `<USERNAME>` with your name and follow the prompts.
 Finally, hit `CTRL-D` until you see `[US]$` and type `debian`.
@@ -49,3 +40,6 @@ PM me on Reddit (u/dylanhamer13) if you need help with any of the instructions.
 
 Thanks for the support, 
 Kat
+or send me a friend request on discord if you run into an issue somewhere
+averageemogirl
+juliet (new maintainer) 
