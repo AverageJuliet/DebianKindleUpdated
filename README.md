@@ -39,7 +39,9 @@ Open an issue in the [Issue Tracker](https://github.com/KatHamer/DebianKindle/is
 PM me on Reddit (u/dylanhamer13) if you need help with any of the instructions.
 
 Thanks for the support, 
+
 Kat
 or send me a friend request on discord if you run into an issue somewhere
 averageemogirl
+
 juliet (new maintainer) 
