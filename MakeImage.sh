@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script will generate a Debian image to be put on the Kindle
-echo "Debian Image Maker 0.2.3 by Dylan Hamer"
+echo "Debian Image Maker 0.2.4 by Dylan Hamer, updated by averagejuliet"
 echo "REDDIT EDITION - I have modified the" 
 echo "script to be a bit more self contained."
 echo 
