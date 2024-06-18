@@ -24,7 +24,7 @@ If you need root access (to install sudo, add users, etc) type `debian --root` t
 
 You should now have a working Debian install. 
 
-Finally, you need to setup Debian (IF YOU HAVE A PREGENERATED IMAGE YOU CAN SKIP THIS STEP)
+Finally, you need to setup Debian
 First, type `debian --root` to enter Debian as root.
 then type `adduser <USERNAME>` replacing `<USERNAME>` with your name.
 Next, type `apt-get install sudo`.
